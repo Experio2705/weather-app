@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="nav-bar">
+            <p>Weather App</p>
+            <input type="textarea" id="city-input" placeholder="Enter your city">
+            <Button id="get-city">Get Weather</Button> 
+        </div>
+        <div class="info">
+            <div class="name" id="city-name">City<i class="fa-solid fa-location-dot"></i></div>
+            <div class="all">
+                <div class="curr" style="font-size: 2rem;">Current Weather</div>
+                <div class="time" id="date-time" style="font-size: 1rem;">dd/mm/yyyy | 00:00</div>
+                <div class="first">
+                    <img src="image.png" class="img" alt="weather image">
+                    <div class="temp">
+                        <div class="temperature">Temperature</div>
+                        <div class="cel" id="main-temp">0 °C</div>
+                    </div>
+                    <div class="wea">
+                        <div class="weather">Weather</div>
+                        <div class="weather-type" id="main-weather">Haze</div>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="max">
+                        <div class="max-temp">Max Temperature :</div>
+                        <div class="temp1" id="main-temp1">0 °C</div>
+                    </div>
+                    <div class="min">
+                        <div class="min-temp">Min Temperature :</div>
+                        <div class="temp2" id="main-temp2">0 °C</div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="air">
+                        <div class="air-qa">Air Quality</div>
+                        <div class="aqua" id="air-aqua"></div>
+                    </div>
+                    <div class="wind">
+                        <div class="wind-qa">Wind</div>
+                        <div class="wqua" id="wind-wqua"></div>
+                    </div>
+                    <div class="humidity">
+                        <div class="humi-qa">Humidity</div>
+                        <div class="hqua" id="h-hqua"></div>
+                    </div>
+                    <div class="visibility">
+                        <div class="visi-qa">Visibility</div>
+                        <div class="vqua" id="visi-vqua"></div>
+                    </div>
+                    <div class="pressure">
+                        <div class="press-qa">Pressure</div>
+                        <div class="pqua" id="press-pqua"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
