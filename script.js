@@ -3,7 +3,7 @@
 document.getElementById("get-city").addEventListener("click",()=>{
     let city=document.getElementById("city-input").value;
     console.log(city);
-    let apiKey="02a272a8439e4c8ac69363fd694b06d4";
+    let apiKey="Write your own API";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     fetch(url)
     .then(response=>response.json())
