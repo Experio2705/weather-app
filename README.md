@@ -30,7 +30,6 @@ A clean and responsive weather application that fetches real-time weather data a
 
 ![Weather App Screenshot](screenshot.png)
 
-> Add a screenshot image in your project folder and name it `screenshot.png`.
 
 ---
 
