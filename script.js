@@ -14,7 +14,7 @@ document.getElementById("get-city").addEventListener("click",()=>{
             console.log("Invalid API key. Check your API key.");
         }else {
             document.getElementById("city-name").innerHTML=`${data.name} , ${data.sys.country}`;
-            const utcTime = new Date(data.dt * 1000); // Convert UTC timestamp to milliseconds
+            const utcTime = new Date(data.dt * 1000); 
             const istTime = new Date(utcTime.toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
             document.getElementById("date-time").innerHTML = istTime.toLocaleString("en-IN", { 
                 day: "2-digit",
